@@ -8,7 +8,10 @@ import { useCart } from "@/context/CartContext";
 export default function AddtoCartBtn({
   productId,
   ...props
-}: { productId: string } & any) {
+}: { productId: string ;
+
+  [key: string]: string
+} ) {
 
 
     const {setCartDetails, getCartDetails} = useCart()
